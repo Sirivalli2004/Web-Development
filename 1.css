@@ -1,0 +1,231 @@
+body{
+    width : 80%;
+    margin:auto;
+    
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: BRODY ;
+    background-color: black;
+    margin-left: 60px; 
+    margin-right: 60px;
+    padding: 5px ;
+    font-size: 70px;
+    
+}
+
+#button{
+    
+    /* height: 100px; */
+    text-align: center;
+    background-color: rgb(28, 7, 43);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(233, 198, 110);
+    font-size: 40px;
+    padding: 4 px;
+    font-weight: bolder;
+    margin-left: 30%;
+    margin-right: 30%;
+    border:4px rgb(228, 241, 44) solid ;
+    border-radius: 30px;
+   
+}
+#button:hover{
+    background-color: darkred;
+    font-family: cursive;
+    font-weight: bolderpa;
+    padding: 4px;
+  
+}
+
+#reload{
+    
+    /* height: 100px; */
+    text-align: center;
+    background-color: rgb(28, 7, 43);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(233, 198, 110);
+    font-size: 40px;
+    padding: 4 px;
+    font-weight: bolder;
+    /* margin-left: 30%;*/
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border:4px rgb(228, 241, 44) solid ;
+    border-radius: 30px;
+    float: right;
+   
+}
+#reload:hover{
+    background-color: darkred;
+    font-family: cursive;
+    font-weight: bolderpa;
+    padding: 4px;
+  
+}
+
+#normalmode{
+    
+    height: 100px;
+    text-align: center;
+    background-color: rgb(4, 26, 10);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(24, 237, 252);
+    font-size: 40px;
+    padding: 4 px;
+    font-weight: bolder;
+    margin-left: 35%;
+    margin-right: 30%;
+    border:4px rgb(82, 250, 15) solid ;
+    border-radius: 30px;
+}
+#normalmode:hover{
+    background-color: rgb(83, 14, 52);
+    font-family: cursive;
+    font-weight: bolder;
+  
+}
+
+#playagain{
+    
+    height: 100px;
+    text-align: center;
+    background-color: rgb(43, 8, 11);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(82, 180, 25);
+    font-size: 40px;
+    padding: 4 px;
+    font-weight: bolder;
+    margin-left: 30%;
+    margin-right: 30%;
+    border:4px rgb(214, 9, 170) solid ;
+    border-radius: 30px;
+}
+#reload:hover{
+    background-color: rgb(241, 226, 12);
+    font-family: cursive;
+    font-weight: bolder;
+    color: crimson;
+    border:4px darkcyan solid ;
+}
+.row{
+    height: 108px;
+    border:  4px;
+    box-sizing: border-box;
+    margin-left: 25%;
+}
+.row1{
+    height: 108px;
+    border:  4px;
+    box-sizing: border-box;
+    margin-left: 15%;
+    
+}
+
+.cube1{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: black solid 4px;
+    box-sizing: border-box;
+    margin: 4px;
+}
+
+.cube2{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: black solid 4px;
+    box-sizing: border-box;
+    margin: 4px;
+    
+}
+.cube3{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: black solid 4px;
+    box-sizing: border-box;
+    margin: 4px;
+}
+
+.cube4{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: black solid 4px;
+    box-sizing: border-box;
+    margin: 4px;
+}
+img{
+    width: 500px;
+    height: 500px;
+    margin-left: 25%;
+    color:rgb(95, 67, 14) ;
+
+}
+
+#won1{
+    color: rgb(63, 32, 11);
+    background-color: rgb(21, 236, 243);
+    font-size: 70px;
+    font-family: MERRIWEATHER;
+    font-weight: bolder;
+    text-align: center;
+    border: 5px solid rgb(55, 6, 59);
+    border-radius: 10px;
+}
+
+#won2{
+    color: rgb(4, 56, 7);
+    background-color: rgb(28, 232, 247);
+    font-size: 70px;
+    font-family: Playfair;
+    font-weight: bolder;
+    text-align: center;
+    border: 5px solid rgb(129, 19, 19);
+    border-radius: 10px;
+}
+.moves{
+    color: rgb(14, 68, 46);
+    
+    margin-right: 30%;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: BrownBagLunch;
+}
+.about{
+    font-size: 30px;
+    color: rgb(51, 7, 71);
+    font-weight: bold;
+    font-family: Art Typo;
+    text-align: center;
+}
+.score{
+    font-size: 50px;
+    color: rgb(27, 3, 27);
+    font-weight: bold;
+    font-family: Art Typo;
+    text-align: center;
+    border: rgb(255, 94, 19) solid 4px;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgb(61, 231, 18);
+    border-radius: 15px;
+}
+@media  screen and (max-width : 812px) {
+    .row1{
+        height: 108px;
+        border:  4px;
+        box-sizing: border-box;
+        margin-left: auto;
+        
+    }
+    
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            task
+        </title>
+        <link rel="stylesheet" href="1.css">
+
+        
+    </head>
+    
+    <body>
+        <h1>💥colour tiles💥</h1>
+        <br>
+        <br>
+        
+        <audio id="music"  src="1delta.mp3"></audio>
+        <audio id="music1"  src="1.mp3"></audio>
+        <audio id="music2"  src="1delta.mp3"></audio>
+
+        <div style="margin-bottom: 30px;"></div>
+
+        <div id="about1" class="about">⭐ The game is to set 3 * 3 cube face in middle of the 5 * 5 cube face</div>
+        <div id="about2" class="about">⭐ The game is to set 4 * 4 cube face in middle of the 6 * 6 cube face</div>
+ 
+        <div style="margin-bottom: 20px;"></div>
+        <button id="button" onclick="startcounter()">START THE GAME</button>
+        
+        <br>
+        <div id="num" class="moves">Number of Moves :</div><div class="moves" id="numberofmoves"></div>
+        <div class="moves" id="numberofmoves1"></div>
+        <br>
+        <br>
+        
+        <button id="reload" > ⟳ </button><div id="countertime"></div>
+        <div id="secondcountertime"></div>
+
+        <div style="margin-bottom: 100px;"></div>
+        <div id="container1">
+            <!-- <img src="puzzle.jpg" alt=""> -->
+            <div id="row1" class="row">
+                <div id="tile1" class="cube1"></div>
+                <div id="tile2" class="cube1"></div>
+                <div id="tile3" class="cube1"></div>
+                <div id="puzzle1" class="cube3"></div>
+                <div id="puzzle2" class="cube3"></div>
+                <div id="puzzle3" class="cube3"></div>
+                <div id="puzzle4" class="cube3"></div>
+            </div>
+    
+            <div id="row2"class="row">
+                <div id="tile4" class="cube1"></div>
+                <div id="tile5" class="cube1"></div>
+                <div id="tile6" class="cube1"></div>
+                <div id="puzzle5" class="cube3"></div>
+                <div id="puzzle6" class="cube3"></div>
+                <div id="puzzle7" class="cube3"></div>
+                <div id="puzzle8" class="cube3"></div>
+            </div>
+    
+            <div id="row3" class="row">
+                <div id="tile7" class="cube1"></div>
+                <div id="tile8" class="cube1"></div>
+                <div id="tile9" class="cube1"></div>
+                <div id="puzzle9" class="cube3"></div>
+                <div id="puzzle10" class="cube3"></div>
+                <div id="puzzle11" class="cube3"></div>
+                <div id="puzzle12" class="cube3"></div>
+            </div>
+
+            <div id="row4" class="row">
+                <div id="puzzle13" class="cube3"></div>
+                <div id="puzzle14" class="cube3"></div>
+                <div id="puzzle15" class="cube3"></div>
+                <div id="puzzle16" class="cube3"></div>
+            </div>
+        </div>
+        
+        <!-- <p class="parastyles" id="countertime"> </p> -->
+        <div style="margin-bottom: 50px;"></div>
+
+        <button id="normalmode" onclick="secondcounter()">next level</button>
+        <br>
+
+        <div class="score" id="score"></div>
+        <div class="score" id="highscore"></div>
+
+        <h2 id="won1"></h2>
+
+        <h2 id="won2"></h2>
+         <br>
+        <button id="playagain" >PLAY AGAIN</button>
+
+        <div id="container2">
+            <div id="Firstrow" class="row1">
+                <div id="box1" class="cube2"></div><div id="delta1" class="cube4"></div>
+                <div id="box2" class="cube2"></div><div id="delta2" class="cube4"></div>
+                <div id="box3" class="cube2"></div><div id="delta3" class="cube4"></div>
+                <div id="box4" class="cube2"></div><div id="delta4" class="cube4"></div>
+                <div id="box5" class="cube2"></div><div id="delta5" class="cube4"></div>
+                <div id="delta6" class="cube4"></div>
+                
+            </div>
+    
+            <div id="Secondrow" class="row1">
+                <div id="box6" class="cube2"></div><div id="delta7" class="cube4"></div>
+                <div id="box7" class="cube2"></div><div id="delta8" class="cube4"></div>
+                <div id="box8" class="cube2"></div><div id="delta9" class="cube4"></div>
+                <div id="box9" class="cube2"></div><div id="delta10" class="cube4"></div>
+                <div id="box10" class="cube2"></div><div id="delta11" class="cube4"></div>
+                <div id="delta12" class="cube4"></div>
+            </div>
+    
+            <div id="Thirdrow" class="row1">
+                <div id="box11" class="cube2"></div><div id="delta13" class="cube4"></div>
+                <div id="box12" class="cube2"></div><div id="delta14" class="cube4"></div>
+                <div id="box13" class="cube2"></div><div id="delta15" class="cube4"></div>
+                <div id="box14" class="cube2"></div><div id="delta16" class="cube4"></div>
+                <div id="box15" class="cube2"></div><div id="delta17" class="cube4"></div>
+                <div id="delta18" class="cube4"></div>
+            </div>
+    
+            <div id="Fourthrow" class="row1">
+                <div id="box16" class="cube2"></div><div id="delta19" class="cube4"></div>
+                <div id="box17" class="cube2"></div><div id="delta20" class="cube4"></div>
+                <div id="box18" class="cube2"></div><div id="delta21" class="cube4"></div>
+                <div id="box19" class="cube2"></div><div id="delta22" class="cube4"></div>
+                <div id="box20" class="cube2"></div><div id="delta23" class="cube4"></div>
+                <div id="delta24" class="cube4"></div>
+            </div>
+    
+            <div id="Fifthrow" class="row1">
+                <div id="box21" class="cube2"></div><div id="delta25" class="cube4"></div>
+                <div id="box22" class="cube2"></div><div id="delta26" class="cube4"></div>
+                <div id="box23" class="cube2"></div><div id="delta27" class="cube4"></div>
+                <div id="box24" class="cube2"></div><div id="delta28" class="cube4"></div>
+                <div id="box25" class="cube2"></div><div id="delta29" class="cube4"></div>
+                <div id="delta30" class="cube4"></div>
+            </div>
+
+            <div id="sixthrow" class="row1">
+                <div id="delta31" class="cube4"></div>
+                <div id="delta32" class="cube4"></div>
+                <div id="delta33" class="cube4"></div>
+                <div id="delta34" class="cube4"></div>
+                <div id="delta35" class="cube4"></div>
+                <div id="delta36" class="cube4"></div>
+            </div>
+        </div>
+
+        <div id="swap"></div>
+    
+        <div style="margin-bottom: 500px;"></div>
+
+        <script src="1.js"></script>
+    
+    </body>
+</html>
